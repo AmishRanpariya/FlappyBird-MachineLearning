@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flappy Bird</title>
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="alert alert-primary generation">
+      <h6></h6>
+    </div>
+    <div class="alert alert-primary score">
+      <h6></h6>
+      <button id="savebestbtn" class="btn btn-primary btn-sm ml-3 mt-1" onclick="storeBest()">Save Best</button>
+      <button id="resetbtn" class="btn btn-warning btn-sm ml-3 mt-1" onclick="removeBest()">Reset All</button>
+    </div>
+    <div class="alert alert-primary speed">
+      <h6>
+        <label for="slider">Speed:(1x to 100x)</label>
+        <input type="range" class="custom-range" id="slider" min="1" max="100" step="1" value="1">
+      </h6>
+    </div>
+  </div>
+  <script src="p5.js"></script>
+  <!-- <script src="p5.sound.min.js"></script> -->
+  <script src="matrix.js"> </script>
+  <script src="nn.js"> </script>
+  <script src="Pipe.js"> </script>
+  <script src="Bird.js"> </script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
